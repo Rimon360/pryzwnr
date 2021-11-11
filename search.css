@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #f5f5f5f5;
+}
+
+
+
+
+input::placeholder {
+    color: rgb(189, 189, 189);
+}
+
+input,
+select {
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 255, 170) !important;
+}
+
+select {
+    border: 1px solid rgb(0, 247, 255) !important;
+}
+
+input:focus {
+    border: 1px dotted rgb(0, 255, 170) !important;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 255, 170);
+    transition: .2s;
+    border: 1px solid rgb(0, 255, 170);
+}
+
+input[type='submit']:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 255, 170);
+    border: 1px solid rgb(0, 255, 170);
+
+}
+
+/**
+
+search page css
+
+**/
+
+.search-container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+}
+.serach-div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    min-height: 100px;
+    border-bottom: 2px solid #00f0dc;
+}
+
+input[type='search']:focus,
+select:focus {
+    border: 1px dotted rgb(0, 247, 255) !important;
+    box-shadow: 0 0 10px #ddd !important;
+}
+
+input[type='search']:focus {
+    background: white;
+}
+
+input[type='search']:focus::placeholder {
+    padding-left: 15px;
+}
+
+input[type='search'] {
+    background: rgb(255, 255, 255);
+    width: 400px;
+    border: none !important;
+    border: 1px solid rgb(6, 226, 255) !important;
+}
+
+select {
+    transition: .2s;
+    cursor: pointer;
+    color: gray;
+    background: rgb(6, 226, 255);
+    color: white;
+}
+
+select:hover {
+    background: rgb(255, 255, 255);
+    color: gray;
+
+}
+
+.logo-div {
+    width: 20%;
+    left: 10px;
+    position: absolute;
+    
+}
+
+.logo-div img {
+    width: 250px !important;
+    height: 150px;
+}
+
+.seach-result-showing-section {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: white !important;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.title-h1 {
+    color: gray;
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-results-div {
+    width: 100%;
+    min-height: 500px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
