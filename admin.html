@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset=UTF-8>
+        <meta http-equiv=X-UA-Compatible content="IE=edge">
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href=/assests/images/logo.png
+            type=image/x-icon>
+        <link rel=stylesheet href=/assests/styles/admin.css>
+        <title>Hello Admin</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>WELCOME &nbsp; ADMIN</h1>
+            </nav>
+            <div class=logout>
+                <button>LOG OUT</button>
+            </div>
+        </header>
+        <aside class=left-nav>
+            <div class=aside-titl>
+                <h1>Choose option</h1>
+            </div>
+            <div class=nav-container-div>
+                <div class=manu>
+                    <button>KG1</button>
+                    <button>KG1</button>
+                    <button>KG1</button>
+                    <button>KG1</button>
+                    <hr>
+                </div>
+            </div>
+        </aside>
+        <main class=main-container>
+            <section class=flexable-section>
+                <div class=user-information-section>
+                    <div class=left-userinformations>
+                        <div class=info-title>Users Informations</div>
+                        <div class=info>
+                            <div class=user-info>
+                                <label for=info1>E-mail Address</label>
+                                <input type=email id=info1>
+                            </div>
+                            <div class=user-info>
+                                <label for=info2>First Name</label>
+                                <input maxlength=30 placeholder="(max 30)"
+                                    id=info2>
+                            </div>
+                            <div class=user-info>
+                                <label for=info3>Last Name</label>
+                                <input maxlength=30 placeholder="(max 30)"
+                                    id=info3>
+                            </div>
+                            <div class=user-info>
+                                <label for=info4>Primemail</label>
+                                <input type=email id=info4>
+                            </div>
+                            <div class=user-info>
+                                <label for=info5>Homephone</label>
+                                <input type=tel id=info5>
+                            </div>
+                            <div class=user-info>
+                                <label for=info6>Mobile</label>
+                                <input type=tel id=info6>
+                            </div>
+                            <div class=user-info>
+                                <label for=info7>Birthdate</label>
+                                <input type=date id=info7>
+                            </div>
+                            <div class=user-info>
+                                <label for=info8>Gender</label>
+                                <input id=info8>
+                            </div>
+                            <div class=user-info>
+                                <label for=info9>Address</label>
+                                <input id=info9>
+                            </div>
+                            <div class=user-info>
+                                <label for=info10>Address2</label>
+                                <input id=info10>
+                            </div>
+                            <div class=user-info>
+                                <label for=info11>City</label>
+                                <input id=info11>
+                            </div>
+                            <div class=user-info>
+                                <label for=info12>State</label>
+                                <input id=info12>
+                            </div>
+                            <div class=user-info>
+                                <label for=info13>Country</label>
+                                <input id=info13>
+                            </div>
+                            <div class=user-info>
+                                <label for=info14>Postalcode</label>
+                                <input id=info14>
+                            </div>
+                            <div class=user-info>
+                                <label for=info15>Govid</label>
+                                <input id=info15>
+                            </div>
+                            <div class=user-info>
+                                <label for=info16>Govldnum</label>
+                                <input id=info16>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=user-image>
+                        <div class=image-div>
+                            <div class=upload-image-div>
+                                <input type=file style=display:none id=file>
+                                <label for=file>Upload Image</label>
+                                <p class=selected-image>
+                                    No Image Selected
+                                </p>
+                                <input type=button id=save value=Save>
+                            </div>
+                            <div class=image-div-->
+                                <img src=/assests/images/avatar2.jpg
+                                    alt=UserImage>
+                                <div class=user-name-->
+                                    Ms. This Person Name
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=data-showing-sectoin>
+                    <div class=nav-bar-bottom>
+                        <div class=each-event-button-div><button>Move First</button></div>
+                        <div class=each-event-button-div><button>Add</button></div>
+                        <div class=each-event-button-div><button>Remove</button></div>
+                        <div class=each-event-button-div><button>Previous</button></div>
+                        <div class=each-event-button-div><button>Next</button></div>
+                        <div class=each-event-button-div><button>Move Last</button></div>
+                        <div class="each-event-button-div plus-search-div">
+                            <input placeholder="Search Here..." type=search
+                                name=search-box id=search-input
+                                class=serch-in-table>
+                            <button>Refresh</button>
+                        </div>
+                    </div>
+                    <div class=data-table>
+                        <table border=1px>
+                            <tr>
+                                <th>#</th>
+                                <th>E-mail</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Primemail</th>
+                                <th>Homephone</th>
+                                <th>Mobile</th>
+                                <th>Birthdate</th>
+                                <th>Gender</th>
+                                <th>Address</th>
+                                <th>Address2</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Country</th>
+                                <th>Govid</th>
+                                <th>Govldnum</th>
+                            </tr>
+
+                            <!-- Dynamic rows -->
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+                            <tr><td>01</td><td>example@gmail.com</td><td>Rimon</td><td>Raiyan</td><td>primemail@gmail.com</td><td>01545456456</td><td>+8801750272061</td><td>2003/03/21</td><td>Male</td> <td>Shyampur, Badargonj, Rangpur, Bangladesh</td><td>Same Above Address</td><td>Rangpur</td><td>Rangpur</td><td>Bangladesh</td><td>Unknown</td><td>Unknown</td></tr>
+
+
+
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <footer>All Rights Reserved ©2021</footer>
+        </main>
+    </body>
+</html>
